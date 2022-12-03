@@ -3,6 +3,7 @@ import PartOne from "./test/PartOne";
 import PartThree from "./test/PartThree";
 import PartTwo from "./test/PartTwo";
 import MainScreen from "./MainScreen";
+import PartThreeDetail from "./test/PartThreeDetail";
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,10 @@ export default function Navigator() {
             <Stack.Screen 
                 component={PartThree}
                 name='part-three'
+            />
+             <Stack.Screen 
+                component={PartThreeDetail}
+                name='part-three-detail'
             />
         </Stack.Navigator>
     )
